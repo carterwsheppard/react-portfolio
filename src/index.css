@@ -449,3 +449,53 @@ background-position: 80%;
 .radio-wrapper input:checked + label::after {
   content: "";
 }
+
+.worksamples {
+  background-color: var(--background);
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-attachment: fixed;
+}
+
+.worksamples img {
+  margin: auto;
+  align-items: center;
+}
+
+.worksamples img:hover {
+  opacity: 80%;
+  border: 4px solid;
+  border-color: var(--turq);
+}
+
+.flexrow {
+  display: flex;
+}
+
+.workimage {
+  width: 30px;
+  align-items: flex-end;
+  width: 30%;
+
+}
+
+.sample {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    vertical-align: center;
+}
+
+.worktext {
+  background-color: var(--background);
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+  font-size: 22px;
+  color: var(--textcolor);
+}
