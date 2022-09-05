@@ -3,6 +3,7 @@ main {
 	margin: 0 auto;
 	max-width: 90%;
   padding: 50px 30px;
+  
 }
 :root {
   --primary: #8c54ff;
@@ -54,6 +55,7 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
+  
 }
 
 h2 {
@@ -88,7 +90,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline #8c54ff;
 }
 
 header {
@@ -156,6 +158,7 @@ nav a:hover {
 
 nav  li {
   cursor: pointer;
+  text-shadow: 0 0 10px rgba(255,255,255, 0.5);
 }
 
 textarea {
@@ -203,11 +206,13 @@ textarea {
 .my-2 {
   margin-top: var(--spacing-two);
   margin-bottom: var(--spacing-two);
+  
 }
 
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
+  display: flex
 }
 
 .px-1 {
@@ -292,4 +297,155 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.center {
+  text-align: center;
+  align-items: center;
+}
+
+header {
+  background-image: url(./assets/images/banner.png);
+  background-size: 100%;
+  position: sticky;
+  text-shadow: 0 0 10px rgba(255,255,255, 0.5);
+  height: 100px;
+  align-items: center;
+  position: sticky;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.hero {
+  
+  background-color: var(--background);
+  background-size: cover;
+  background-position: center;
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ align-items: flex-start;
+ background-attachment: fixed;
+background-position: 80%;
+}
+
+.contact-form {
+  border: 3px solid white;
+  background-color: var(--turq);
+  opacity: 0.8;
+  padding: 20px;
+  color: var(--textcolor);
+  width: 50%;
+  margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  position: relative;
+  /*text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;*/
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form h3 {
+  font-size: 24px;
+  margin: 0;
+}
+.contact-form p {
+  margin: 5px 0 15px 0;
+}
+
+.hero-text {
+  width: 30%;
+  text-align: left;
+  margin: 3.5%;
+  color: var(--textcolor);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.hero-text h2 {
+  font-style: italic;
+  font-size: 42px;
+  color: var(--textcolor);
+  text-shadow: 0 0 10px rgba(255,255,255, 0.5);
+}
+
+.form-input {
+  border: 1px solid gray;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  margin-bottom: 10px; 
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.7);
+}
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+.contact-form label {
+  margin: 0 5px;
+}
+
+.contact-form button {
+  color: var(--textcolor);
+  background-color: grey;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+} 
+
+.contact-form button:hover {
+  background-color: var(--background);  
+}
+
+.radio-wrapper input {
+  opacity: 0;
+}
+
+.radio-wrapper label {
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+.radio-wrapper label::before {
+  border-radius: 50%;
+}
+
+.radio-wrapper label::before {
+  content: "";
+  height: 18px;
+  width: 18px;
+  background: rgba(255, 255, 255, 0.75);  
+  border: 1px solid grey;  
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.radio-wrapper label::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--navy);
+  position: absolute;
+  left: -29px;
+  top: -3px;
+  background-image: radial-gradient(circle, #39a6b2, #024e76);
+}
+
+.radio-wrapper input + label::after {
+  content: none;
+}
+
+.radio-wrapper input:checked + label::after {
+  content: "";
 }
